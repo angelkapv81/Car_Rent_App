@@ -1,0 +1,150 @@
+:root {
+  --primary-text-color: #111;
+  --secondary-text-color: #343434;
+  --secondary-background-color: #f7f6f9;
+  --title-text-color: #171820;
+  --white-color: #fff;
+  --bg-color: #f7f6f9;
+  --dark-bg-color: #171820;
+  --auth-bg-color: #dcebf7;
+  --user-bg-color: #eaeaea;
+  --account-bg-color: #21222c;
+  --dark-sidebar-bg-color: #13151a;
+  --main-blue-color: #3e85f3;
+  --bg-color-to-do: #ceeefd;
+  --hover-blue: #2b78ef;
+  --blue2-color: #dcebf7;
+  --pink-color: #ffd2dd;
+  --error-color: #da1414;
+  --green-color: #3cbc81;
+  --gray-color: #84828a;
+  --placeholder-color: #dce3e5;
+  --transition-timing-function: cubic-bezier(0, 0.11, 0.35, 2);
+  --tr-delay: 150ms;
+  --transition: scale(0.9);
+
+  --logo-color: #3e85f3;
+  --name-color: #343434;
+  --nav-color: #3e85f3;
+  --nav-background: #d0e7fa;
+  --sidebar-background: #fff;
+  --panel-color: #84828a;
+  --icon-close-color: #13151a;
+  --btn-close-color: #fff;
+  --btn-menu-color: #343434;
+  --btn-edit-feedback: #e3f3ff;
+  --background-user-page: #fff;
+  --label-user-page: #111111;
+  --border-user-color: none;
+  --modal-background: #ffffff;
+  --modal-input-background: #f6f6f6;
+  --subtitle-color: rgba(52, 52, 52, 0.8);
+  --input-background-color: #f6f6f6;
+  --input-form-text: #343434;
+  --btn-close-feedback: #111111;
+  --color-border-form: #e3f3ff;
+  --background-calendar-color: #fff;
+  --color-number: #21222c;
+  --background-month-color: #cae8ff;
+  --color-month: #3e85f3;
+  --background-day-color: #e3f3ff;
+  --color-active-number: #3e85f3;
+  --color-paginator-button: rgba(255, 255, 255, 0.9);
+  --add-task-btn: #e3f3ff;
+  --add-task-modal: #fff;
+  --border-title-task: #f6f6f6;
+  --input-title-task: #f6f6f6;
+  --time-color: #343434;
+  --change-month-button: rgba(220, 227, 229, 0.5);
+  --type-profile: #343434;
+  --text-let-go: #111;
+  --card-border-color: rgba(220, 227, 229, 0.8);
+  --card-background-color: #f7f6f9;
+  --card-title-color: #111;
+  --btn-cancel-feedback: #e5edfa;
+  --star-color-feedback: rgb(206, 201, 193);
+  --card-btn-color: #efefef;
+  /* --card-btn-cancel: #111; */
+  .css-pwxzbm {
+    background-color: var(--card-background-color);
+  }
+}
+html[data-theme='dark'] {
+  --user-bg-color: #171820;
+  --gray-color: #fff;
+  --primary-text-color: #fff;
+
+  --secondary-background-color: #171820;
+
+  /* Navigation */
+  --logo-color: #fff;
+  --nav-color: #fff;
+  --nav-background: #3e85f3;
+  --sidebar-background: #13151a;
+  --icon-close-color: #fff;
+  --btn-close-color: #13151a;
+  --btn-menu-color: #fff;
+
+  /* UserInfo */
+  --name-color: #fff;
+  --type-profile: rgba(250, 250, 250, 0.3);
+
+  --primary-text-color: #fff;
+
+  /* feedbackBtn */
+  /* UserForm */
+  --background-user-page: #21222c;
+  --label-user-page: rgba(250, 250, 250, 0.3);
+  --border-user-color: rgba(250, 250, 250, 0.15);
+
+  /* FeedbackForm */
+  --modal-background: #171820;
+  --subtitle-color: rgba(250, 250, 250, 0.3);
+  --input-background-color: rgba(250, 250, 250, 0.15);
+  --input-form-text: #fff;
+  --btn-close-feedback: #fff;
+  --btn-edit-feedback: #353647;
+  --btn-cancel-feedback: #21222c;
+  --modal-input-background: #171820;
+  --star-color-feedback: #353647;
+
+  /* Statistic */
+  --color-border-form: rgba(227, 243, 255, 0.15);
+
+  /* Calendar */
+  --background-calendar-color: #21222c;
+  --color-number: #fff;
+  --color-active-number: #fff;
+  --auth-bg-color: rgba(250, 250, 250, 0.15);
+  --background-month-color: #3e85f3;
+  --color-month: #fff;
+  --background-day-color: #21222c;
+
+  /* Paginator */
+  --color-paginator-button: #21222c;
+  --change-month-button: rgba(250, 250, 250, 0.15);
+
+  /* Task */
+  --add-task-btn: #3e85f3;
+  --placeholder-color: rgba(255, 255, 255, 0.15);
+  --add-task-modal: black;
+
+  /* Task Form */
+  --border-title-task: rgba(255, 255, 255, 0.15);
+  --input-title-task: #171820;
+  --time-color: #fff;
+
+  /* TextLog */
+  --text-let-go: #fff;
+
+  /* TaskCard */
+  --card-border-color: rgba(255, 255, 255, 0.15);
+  --card-background-color: #171820;
+  --card-title-color: #fff;
+  --card-btn-color: #fff;
+  --card-btn-cancel: #111;
+}
+
+.css-pwxzbm {
+  background-color: var(--card-background-color);
+}
