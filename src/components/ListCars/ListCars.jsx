@@ -1,11 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import styles from './ListCars.module.css';
 import cars from '../../data/advertsCars.json';
+import filterCars from 'services/filter';
+
+// import CarModal from '../CarModal/CarModal';
 
 export default function ListCars() {
+  // const [showModal, setShowModal] = useState(false);
+  // const [selectedCar, setSelectedCar] = useState(null);
+
+  // const openModal = car => {
+  //   setSelectedCar(car);
+  //   setShowModal(true);
+  // };
+
+  // const closeModal = () => {
+  //   setSelectedCar(null);
+  //   setShowModal(false);
+  // };
+  const make = JSON.parse(window.localStorage.getItem('make')) ?? '';
+  const rentalPrice =
+    JSON.parse(window.localStorage.getItem('rentalPrice')) ?? '';
+  const mileageMin =
+    JSON.parse(window.localStorage.getItem('mileageMin')) ?? '';
+  const mileageMax =
+    JSON.parse(window.localStorage.getItem('mileageMax')) ?? '';
+
+  const filteredCars = filterCars(cars, {
+    make,
+    rentalPrice,
+    mileageMin,
+    mileageMax,
+  });
   return (
     <div className={styles.car_list}>
-      {cars.map(car => (
+      {filteredCars.map(car => (
         <div className={styles.car_card} key={car.id}>
           <img
             className={styles.car_img}
@@ -31,9 +61,14 @@ export default function ListCars() {
               </ul>
             </li>
           </ul>
-          <button>Load more</button>
+          <button
+          // onClick={openModal}
+          >
+            Load more
+          </button>
         </div>
       ))}
+      {/* {showModal && <CarModal carInfo={selectedCar} onClose={closeModal} />} */}
     </div>
   );
 }

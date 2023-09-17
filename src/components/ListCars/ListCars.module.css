@@ -1,14 +1,19 @@
 @import url(../../vars.css);
 
 .car_list {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: blueviolet;
 }
 
+.car_card:not(:nth-child(4n)) {
+  margin-right: 29px;
+}
 .car_card {
   display: block;
+  width: 274px;
 }
 
 .car_img {

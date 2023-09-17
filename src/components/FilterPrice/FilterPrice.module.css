@@ -1,0 +1,16 @@
+form {
+  display: flex;
+  width: 859px;
+  margin: 0 auto;
+  background-color: red;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter.make {
+  display: flex;
+  width: 89px;
+  margin-right: 18px;
+  background-color: green;
+}

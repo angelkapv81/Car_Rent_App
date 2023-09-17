@@ -21,9 +21,3 @@ export default function App() {
     /* </Suspense> */
   );
 }
-
-// export default App;
-//  <Route
-//    path="account"
-//    element={<PrivateRoute redirectTo="/login" component={<AccountPage />} />}
-//  />;
